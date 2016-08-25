@@ -17,7 +17,7 @@ code = "
 
 ## create the compiled function
 
-rcppSim = cxxfunction(signature(a="numeric", u="numeric"), code, plugin = "RcppArmadillo")
+rcppSim = cxxfunction(signature(a = "numeric", u = "numeric"), code, plugin = "RcppArmadillo")
 
 set.seed(123)
 a = matrix(c(0.5, 0.1, 0.1, 0.5), nrow = 2)
